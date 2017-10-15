@@ -42,7 +42,7 @@ var identificador = function (){
 					
 					console.log('suma impares = ' +suma_impar)
 					console.log('suma pares = ' +suma_par)
-					console.log('suma total = ' +resultado, 'digito de control = ' +digito_control)
+					alert('EL DIGITO DE CONTROL ES: ' +digito_control)
 
 		} 
 			else if(tipo=="UPC" && longitud===11 || tipo=="EAN8" && longitud===7)
@@ -78,14 +78,14 @@ var identificador = function (){
 					
 					console.log('suma impares = ' +suma_impar)
 					console.log('suma pares = ' +suma_par)
-					console.log('suma total = ' +resultado, 'digito de control = ' +digito_control)
+					alert('EL DIGITO DE CONTROL ES: ' +digito_control)
 			}
 				
 					else
 					{
 						campo.classList.remove ("uk-form-success");
 						campo.classList.add ("uk-form-danger");
-						console.log('El codigo ingresado es invalido')
+						alert('EL CÓDIGO INGRESADO ES INVALIDO PARA EL TIPO SELECCIONADO')
 						
 					}
 }
