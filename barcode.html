@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<!-- UIkit CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.30/css/uikit.min.css" />
+
+	<!-- jQuery is required -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!-- UIkit JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.30/js/uikit.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.30/js/uikit-icons.min.js"></script>
+	<title>Calculadora del dígito de control - Barcode</title>
+</head>
+<body>
+	<h1 class="uk-text-center">Calculadora del dígito de control - Barcode || EAN8 - EAN13 - UPC</h1>
+	<form class="uk-margin uk-align-center uk-width-1-2  uk-padding-small" action="">
+
+			<div class="uk-margin">
+	            <select class="uk-select" id="type_barcode">
+	            	<option value="">Escoja una opción</option>
+	                <option value="EAN13">EAN-13</option>
+	                <option value="EAN8">EAN-8</option>
+	                <option value="UPC">UPC</option>
+	            </select>
+	        </div>
+
+			<div class="uk-margin uk-align-center">
+	            <input class="uk-input " type="text" id="barcode" name="barcode">
+	        </div>
+
+	        <div class="uk-margin uk-text-center">
+				 <input type="button" class="uk-button uk-button-primary" value="Validar" onclick="identificador()"></input>
+	        </div>
+	
+		
+	</form>
+		
+</body>
+
+<script src="validador.js"></script>
+
+
+</html>
+
+
+
